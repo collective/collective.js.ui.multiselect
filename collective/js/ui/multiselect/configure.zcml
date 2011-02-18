@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+	xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.js.ui.multiselect">
+
+  <five:registerPackage package="." />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.js.ui.multiselect"
+      directory="profiles/default"
+      description="JQuery UI Multiselect Plugin"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+	  />
+
+  <browser:resource
+      name="jquery.ui.multiselect.js"
+      file="jquery.ui.multiselect.js" />
+
+</configure>
