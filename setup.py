@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = open('collective/js/ui/multiselect/version.txt').read().strip()
+version = '1.0dev'
 maintainer = 'Elio Schmutz'
 
 setup(name='collective.js.ui.multiselect',

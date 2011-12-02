@@ -2,15 +2,13 @@ Changelog
 =========
 
 
-1.0a4
------
+1.0 (unreleased)
+----------------
+
+- Nothing changed yet.
 
 
-1.0a3
------
+1.0a3 (2011-02-21)
+------------------
 
-
-1.0
----
-
-* Initial release
+- Initial release
