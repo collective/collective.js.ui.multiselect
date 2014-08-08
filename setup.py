@@ -35,6 +35,7 @@ setup(name='collective.js.ui.multiselect',
 
       install_requires=[
         'setuptools',
+        'ftw.upgrade'
         ],
 
       entry_points='''

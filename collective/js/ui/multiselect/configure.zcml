@@ -8,6 +8,8 @@
 
   <five:registerPackage package="." />
 
+  <include package=".upgrades" />
+
   <genericsetup:registerProfile
       name="default"
       title="collective.js.ui.multiselect"
@@ -19,5 +21,9 @@
   <browser:resource
       name="jquery.ui.multiselect.js"
       file="jquery.ui.multiselect.js" />
+
+  <browser:resource
+      name="ui.multiselect.css"
+      file="ui.multiselect.css" />
 
 </configure>

@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.js.ui.multiselect">
+
+    <genericsetup:upgradeStep
+        title="Add missing CSS."
+        description=""
+        source="0.1"
+        destination="1001"
+        handler="collective.js.ui.multiselect.upgrades.to1001.RegisterCSS"
+        profile="collective.js.ui.multiselect:default"
+        />
+
+    <genericsetup:registerProfile
+        name="1001"
+        title="collective.js.ui.multiselect.1001"
+        description=""
+        directory="profiles/1001"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+</configure>
